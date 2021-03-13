@@ -17,7 +17,7 @@
 ## Интерпретатор
 
 Запуск: ghci
-```
+```haskell
 Prelude>1+2*5
 11
 Prelude>"abcd"++"efgh"
@@ -29,7 +29,7 @@ Prelude>pi
 Есть команды интерпретатора. Начинаются все с **:**, Можно задавать лишь первую букву команды.
 
 Команда :set устанавливает настройки (? не факт что только их) интерпретатора. Например:
-```
+```haskell
 Prelude> :set prompt "GHCi> "
 GHCi> 
 ```
@@ -38,7 +38,7 @@ GHCi>
 ## Код в файлах
 
 Сначала пишем код [в файле `Hello.hs`](./hello.hs):
-```
+```haskell
 main = putStrLn "Hello, Vlad!"
 ```
 Затем с помощью команды `ghci Hello.hs` запускаем интерпретатор с подгруженным модулем.
@@ -51,14 +51,14 @@ Hello, Vlad!
 ## Код в модулях
 
 [В файл `Test.hs`](./Test.hs) записываем код:
-```
+```haskell
 module Test where
 
 sayHello = putStrLn "Hello from module Test."
 ```
 
 Затем в том же каталоге запускаем `ghci`. Чтобы на лету загрузить модуль, можно просто вбить:
-```
+```haskell
 Prelude> :load Test
 [1 of 1] Compiling Test             ( Test.hs, interpreted )
 Ok, one module loaded.
@@ -66,13 +66,13 @@ Ok, one module loaded.
 ```
 
 Теперь можно вызвать функцию из модуля:
-```
+```haskell
 *Test> sayHello
 Hello from module Test.
 ```
 
 Если мы поменяли код модуля, его можно перезагрузить командой
-```
+```haskell
 *Test> :reload Test
 [1 of 1] Compiling Test             ( Test.hs, interpreted )
 Ok, one module loaded.
