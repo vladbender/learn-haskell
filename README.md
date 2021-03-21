@@ -12,3 +12,4 @@
   - [2.1 Параметрический полиморфизм](./lecture_2/lecture_2.1/lecture_2.1.md)
   - [2.2 Параметрический полиморфизм (2)](./lecture_2/lecture_2.2/lecture_2.2.md)
   - [2.3 Классы типов](./lecture_2/lecture_2.3/lecture_2.3.md)
+  - [2.3 Стандартные классы типов](./lecture_2/lecture_2.4/lecture_2.4.md)
